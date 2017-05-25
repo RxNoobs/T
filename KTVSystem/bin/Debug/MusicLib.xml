@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Songs>
+  <SongInfo ID="1">
+    <SongName>ABC</SongName>
+    <SongPinyin>ABC</SongPinyin>
+    <SingerName>ABC</SingerName>
+    <SingerPinyin>ABC</SingerPinyin>
+    <SongLanguage>国语</SongLanguage>
+    <SingerRegion>大陆</SingerRegion>
+  </SongInfo>
+  <SongInfo ID="2">
+    <SongName>DEF</SongName>
+    <SongPinyin>DEF</SongPinyin>
+    <SingerName>DEF</SingerName>
+    <SingerPinyin>DEF</SingerPinyin>
+    <SongLanguage>国语</SongLanguage>
+    <SingerRegion>大陆</SingerRegion>
+  </SongInfo>
+  <SongInfo ID="3">
+    <SongName>GHI</SongName>
+    <SongPinyin>GHI</SongPinyin>
+    <SingerName>GHI</SingerName>
+    <SingerPinyin>GHI</SingerPinyin>
+    <SongLanguage>国语</SongLanguage>
+    <SingerRegion>大陆</SingerRegion>
+  </SongInfo>
+  <SongInfo ID="4">
+    <SongName>Bad Boy</SongName>
+    <SongPinyin>BAD BOY</SongPinyin>
+    <SongLanguage>国语</SongLanguage>
+    <SingerName>丁克森</SingerName>
+    <SingerPinyin>DKS</SingerPinyin>
+    <SingerRegion>大陆</SingerRegion>
+  </SongInfo>
+  <SongInfo ID="5">
+    <SongName>一天一天</SongName>
+    <SongPinyin>ytyt</SongPinyin>
+    <SongLanguage>韩语</SongLanguage>
+    <SingerName>binbang</SingerName>
+    <SingerPinyin>bb</SingerPinyin>
+    <SingerRegion>日韩</SingerRegion>
+  </SongInfo>
+  <SongInfo ID="6">
+    <SongName>try</SongName>
+    <SongPinyin>try</SongPinyin>
+    <SongLanguage>英语</SongLanguage>
+    <SingerName>aa</SingerName>
+    <SingerPinyin>aa</SingerPinyin>
+    <SingerRegion>欧美</SingerRegion>
+  </SongInfo>
+</Songs>

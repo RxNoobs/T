@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5E81F10A-4378-4DD6-9FF7-F2AFE8596E3A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KTVSystem</RootNamespace>
+    <AssemblyName>KTVSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.Win.2, Version=2.0.20171.248, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04" />
+    <Reference Include="C1.Win.C1Command.2, Version=2.0.20171.248, Culture=neutral, PublicKeyToken=e808566f358766d8" />
+    <Reference Include="C1.Win.C1Input.2, Version=2.0.20171.248, Culture=neutral, PublicKeyToken=7e7ff60f0c214f9a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoSizeFormClass.cs" />
+    <Compile Include="BaseInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseInfoForm.Designer.cs">
+      <DependentUpon>BaseInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_AlreadyExists.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_AlreadyExists.Designer.cs">
+      <DependentUpon>Frm_AlreadyExists.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Language.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Language.Designer.cs">
+      <DependentUpon>Frm_Language.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Ranking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Ranking.Designer.cs">
+      <DependentUpon>Frm_Ranking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Singer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Singer.Designer.cs">
+      <DependentUpon>Frm_Singer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_SongSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_SongSearch.Designer.cs">
+      <DependentUpon>Frm_SongSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="SingerMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SingerMessage.Designer.cs">
+      <DependentUpon>SingerMessage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BaseInfoForm.resx">
+      <DependentUpon>BaseInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_AlreadyExists.resx">
+      <DependentUpon>Frm_AlreadyExists.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Language.resx">
+      <DependentUpon>Frm_Language.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Ranking.resx">
+      <DependentUpon>Frm_Ranking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Singer.resx">
+      <DependentUpon>Frm_Singer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_SongSearch.resx">
+      <DependentUpon>Frm_SongSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SingerMessage.resx">
+      <DependentUpon>SingerMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\背景.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\歌手.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\热门排行榜.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\歌名搜索.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\81.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\初音1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\初音3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\初音5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\初音18.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\初音13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\初音14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\初音8.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="bin\Debug\MusicLib.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
